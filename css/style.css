@@ -48,9 +48,6 @@ COLORS_1 {
 .header-menu-top {
 	margin: 0px 0px 30px 0px;
 }
-.header-menu-list {
-
-}
 .header-menu-list li {
 	display: inline-block;
 	margin: 0px 20px 0px 0px;
@@ -71,13 +68,8 @@ COLORS_1 {
 	color: rgb(255, 245, 245);
 	line-height: 100%;
 }
-.header-menu-bottom {}
 
 
-.main {
-	font-size: 0;
-	font-family:'Barlow', sans-serif;
-}
 .block {
 	margin: 0px 0px 20px 0px;
 	padding: 10px;
@@ -142,7 +134,6 @@ COLORS_1 {
 	border: 20px inset transparent;
 
 }
-.example-block__image {}
 .example-block__image img{
 	border: 10px outset rgba(66,161,110,0.46);
 	width: 200px;
@@ -198,7 +189,6 @@ COLORS_1 {
 	outline: 20px inset transparent;
 
 }
-.example-block__image2 {}
 .example-block__image2 img{
 	outline: 10px outset rgba(66,161,110,0.46);
 	width: 200px;
