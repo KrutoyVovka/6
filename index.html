@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Lesson 6</title>
+	<meta charset="UTF-8" />
+	<!-- <meta name="format-detection" content="telephone=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700;display=swap;subset=cyrillic-ext" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class='container'>
+				<nav class="header-menu header-menu-top">
+					<ul class="header-menu-list">
+						<li><a href="index.html" class="header-menu__link">домашняя работа</a></li>
+						<li><a href="index1.html" class="header-menu__link">дополнительное задание</a></li>
+					</ul>
+				</nav>
+				<h2 class="header__title">стили оформления блоков</h2>
+				<nav class="header-menu header-menu-bottom">
+					<ul class="header-menu-list">
+						<li><a href="#border" class="header-menu__link">border</a></li>
+						<li><a href="#outline" class="header-menu__link">outline</a></li>
+						<li><a href="#border-rad" class="header-menu__link">border-radius</a></li>
+						<li><a href="#box-shadow" class="header-menu__link">box-shadow</a></li>
+						<li><a href="#op" class="header-menu__link">opasity</a></li>
+						<li><a href="#vis" class="header-menu__link">visibility</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+		<main class="main">
+			<div id="border">
+				<div class="example-block__block block">
+					<p class="block-text"><span class="bold">display: block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block block">
+					<p class="block-text"><span class="bold">display: inline-block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline block">
+					<p class="block-text"> <span class="bold">display: inline</span> <span class="red">Граница строчного элемента накладывается (наезжает) на внешний отступ верхнего элемента (если его нет, то на сам верхний элемент, в данном случае на границу), а на нее наезжает ))) нижний элемент.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image block">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+				<div class="example-block__image block">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+				<div class="example-block__image block">
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+			</div>
+			<div id="border-hov">
+				<div class="example-block__block block example-block__block_hover">
+					<p class="block-text"><span class="bold">display: block</span> При применении псевдокласса hover граница заменяется на такую же, но прозрачную. <span class="red">Это правильно.</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block block example-block__inline-block_hover">
+					<p class="block-text"><span class="bold">display: inline-block</span> При наведении к границе применяется значение none. <span class="red">Это не правильно.</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline block example-block__inline_hover">
+					<p class="block-text"> <span class="bold">display: inline</span> <span class="red">При hover видно, что, тем не менее, бэкграунд действует под границей (это нормально, если не учитывать, что описывалось выше).</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image block example-block__image_hover">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+			</div>
+			<div id="outline outline-hover">
+				<div class="example-block__block2 example-block__block2_hover block">
+					<p class="block-text"><span class="bold">display: block</span> <span class="red">свойство outline применяется за границами блока, поэтому такая граница может оказаться как на другом элементе, так и за пределами экрана.</span> <span class="bold">При наведении значение transparent действует так же, как и с border.</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block2 example-block__inline-block2_hover block">
+					<p class="block-text"><span class="bold">display: inline-block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline2 example-block__inline2_hover block">
+					<p class="block-text"> <span class="bold">display: inline</span> Здесь все так же <span class="line">Граница строчного элемента накладывается (наезжает) на внешний отступ верхнего элемента (если его нет, то на сам верхний элемент, в данном случае на границу), а на нее наезжает ))) нижний элемент.</span><span class="red"> Прикольная лесенка справа...</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image2 example-block__image2_hover block">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+			</div>
+			<div id="border-rad">
+				<div class="example-block__block block block-br">
+					<p class="block-text"><span class="bold">display: block</span> <span class="red">Здесь border-radius. </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block block block-br_diff">
+					<p class="block-text"><span class="bold">display: inline-block</span> <span class="red">И здесь border-radius. Значения в процентах берутся от размера соответствующей стороны элемента. </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline block block-br">
+					<p class="block-text"> <span class="bold">display: inline</span> <span class="red">Никакого border-radius.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image image image-block-br">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+				</div>
+			</div>
+			<div id="box-shadow">
+				<div class="example-block__block block block_shadow">
+					<p class="block-text"><span class="bold">display: block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block block block_shadoww">
+					<p class="block-text"><span class="bold">display: inline-block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline  block block-shadow">
+					<p class="block-text block-shadow-text"> <span class="bold">display: inline</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image block image-shadow">
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<img src="img/1.jpg" alt="foto" />
+					<p class="block-text">Если у меня все правильно, то чтобы тень была у картинки, ее нужно задать и обертке</p>
+					<p class="block-text">Проверил еще раз: тень элемента самостоятельная, а тень картинки только если задана для элемента</p>
+					<p class="block-text">Для span такой закономерности не выявлено
+					<div class=""></div>
+					</p>
+				</div>
+			</div>
+			<div id="op">
+				<div class="example-block__block block block-op">
+					<p class="block-text"><span class="bold">display: block; opasity:0.5;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline-block block block-op block-br">
+					<p class="block-text"><span class="bold">display: inline-block; opasity:0.5;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline block block-op block_shadow">
+					<p class="block-text"> <span class="bold">display: inline; opasity:0.5;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image example-block__image2_hover block ">
+					<a href="https://fls.guru/" target="_blank"><img class="block-op1" src="img/1.jpg" alt="foto" /></a>
+					<a class="block-op2" href="https://fls.guru/" target="_blank"><img src="img/1.jpg" alt="foto" /></a>
+					<a class="block-op3" href="https://fls.guru/" target="_blank"><img src="img/1.jpg" alt="foto" /></a>
+					<p>opasity:0.5;</p>
+				</div>
+			</div>
+			<div id="vis">
+				<div class="vis">
+					К элементам блока применено свойство <span class="bold">visibility:hidden</span>. Элементы скрыты, но продолжают занимать свое место и участвовать в верстке. <br> <span class="red">Но с ними нельзя взаимодействовать.</span> Но если, например, в ссылку обернуть сам элемент, для которого задано свойство visibility:visible, тогда все гуд)
+				</div>
+				<a href="google.com">
+					<div class="example-block__block block block-vis">
+						<p class="block-text"><span class="bold">display: block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+					</div>
+				</a>
+				<div class="example-block__inline-block block block-vis">
+					<p class="block-text vis"><span class="bold">display: inline-block</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus recusandae explicabo est soluta deleniti magnam dolorum aut nam possimus commodi sit odio, molestias, in dolore debitis id consectetur aliquam sequi.</p>
+				</div>
+				<div class="example-block__inline block block-vis">
+					<p class="block-text"> <span class="bold">display: inline</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio labore eligendi sed quos totam magni. Rerum laudantium consectetur, dolorum nostrum nobis eius sit facilis! Velit numquam dolores fuga aliquam?</p>
+				</div>
+				<div class="example-block__image block example-block__image_hover block-vis image-shadow block-op">
+					<a href=""><img src="img/1.jpg" alt="foto" /></a>
+					<a href=""><img class="image-shadow vis brh" src="img/1.jpg" alt="foto" /></a>
+					<a href=""><img src="img/1.jpg" alt="foto" /></a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class='container'>
+				<nav class="header-menu header-menu-top">
+					<ul class="header-menu-list">
+						<li><a href="#top" class="header-menu__link">в начало</a></li>
+						<li><a href="index1.html" class="header-menu__link">дополнительное задание</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</footer>
+
+	</div>
+</body>
+
+</html>
